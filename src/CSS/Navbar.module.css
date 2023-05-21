@@ -1,0 +1,34 @@
+.nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
+  margin: -30px auto;
+  padding: 10px;
+}
+
+.navlogin {
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  /* width: 80px; */
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navlogin:hover {
+  color: #fddb3a;
+  cursor: pointer;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .nav {
+    margin: 0 auto;
+  }
+  .navlogin {
+    margin: 0px 20px;
+  }
+}

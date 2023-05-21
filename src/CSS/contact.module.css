@@ -1,0 +1,29 @@
+.container {
+  margin: auto;
+  padding: 10px;
+}
+.child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 60%;
+  margin: 10px auto;
+}
+
+.child img {
+  border-radius: 70%;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  h1 {
+    display: none;
+  }
+  .child {
+    font-size: x-small;
+  }
+  .child img {
+    width: 60px;
+  }
+}
